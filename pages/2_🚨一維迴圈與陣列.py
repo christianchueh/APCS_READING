@@ -33,7 +33,7 @@ st.write("---")
 st.markdown("### 4. 第 4 題")
 st.code("""a = [1, 3, 5, 7, 9]
 i = 0
-while i < len(a):
+for i in range(5):
     if a[i] == 5:
         break
     i += 1
@@ -118,7 +118,7 @@ st.markdown("### 13. 第 13 題")
 st.code("""a = [12, 34, 56, 78]
 s = ""
 for x in a:
-    s += str(x)[0]
+    s += str(x)
 print(s)""", language='python')
 ans_13 = st.radio("執行上述程式碼後，輸出的結果為何？", ["(A) 12345678", "(B) 1357", "(C) 2468", "(D) 12"], key="q13")
 st.write("---")
@@ -135,7 +135,7 @@ st.write("---")
 st.markdown("### 15. 第 15 題")
 st.code("""a = [1, 2, 3, 4, 5]
 i = 4
-while i >= 0:
+for i in range(4,-1,-1):
     if a[i] % 2 == 0:
         print(a[i])
         break
@@ -194,7 +194,7 @@ if st.button("送出解答"):
     score = 0
     if ans_1 == "(B) 9": score += 5
     if ans_2 == "(B) 6": score += 5
-    if ans_3 == "(B) 60": score += 5
+    if ans_3 == "(A) 90": score += 5
     if ans_4 == "(B) 2": score += 5
     if ans_5 == "(A) [4, 5, 9]": score += 5
     if ans_6 == "(B) 7": score += 5
@@ -204,7 +204,7 @@ if st.button("送出解答"):
     if ans_10 == "(B) 18": score += 5
     if ans_11 == "(B) 3": score += 5
     if ans_12 == "(C) 5": score += 5
-    if ans_13 == "(B) 1357": score += 5
+    if ans_13 == "(A) 12345678": score += 5
     if ans_14 == "(B) 9": score += 5
     if ans_15 == "(B) 4": score += 5
     if ans_16 == "(C) 3": score += 5
@@ -218,7 +218,7 @@ if st.button("送出解答"):
     st.markdown("### 📌 20 題正確答案一覽")
     st.write("**第 1 題：** (B) 9" + " , 你的答案：" + str(ans_1))
     st.write("**第 2 題：** (B) 6" + " , 你的答案：" + str(ans_2))
-    st.write("**第 3 題：** (B) 60" + " , 你的答案：" + str(ans_3))
+    st.write("**第 3 題：** (A) 90" + " , 你的答案：" + str(ans_3))
     st.write("**第 4 題：** (B) 2" + " , 你的答案：" + str(ans_4))
     st.write("**第 5 題：** (A) [4, 5, 9]" + " , 你的答案：" + str(ans_5))
     st.write("**第 6 題：** (B) 7" + " , 你的答案：" + str(ans_6))
@@ -228,7 +228,7 @@ if st.button("送出解答"):
     st.write("**第 10 題：** (B) 18" + " , 你的答案：" + str(ans_10))
     st.write("**第 11 題：** (B) 3" + " , 你的答案：" + str(ans_11))
     st.write("**第 12 題：** (C) 5" + " , 你的答案：" + str(ans_12))
-    st.write("**第 13 題：** (B) 1357" + " , 你的答案：" + str(ans_13))
+    st.write("**第 13 題：** (A) 12345678" + " , 你的答案：" + str(ans_13))
     st.write("**第 14 題：** (B) 9" + " , 你的答案：" + str(ans_14))
     st.write("**第 15 題：** (B) 4" + "  ,你的答案：" + str(ans_15))
     st.write("**第 16 題：** (C) 3" + " , 你的答案：" + str(ans_16))
